@@ -1,0 +1,36 @@
+#accordian {
+  background-color: rgb(255, 61, 71, 0.5);
+  min-height: max-content;
+  display: grid;
+  grid-template-rows: max-content auto;
+  gap: 0.5em;
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 0.5em;
+    li {
+      padding: 0.5em;
+      border-bottom: 2px solid var(--neutral-000);
+      .question {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        &::after {
+          content: "+";
+        }
+      }
+      .answer {
+        padding: 0.5em;
+        color: var(--accent-500);
+        display: none;
+        overflow: hidden;
+      }
+      .active {
+        &::after {
+          content: "-";
+        }
+      }
+    }
+  }
+}

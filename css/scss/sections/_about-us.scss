@@ -1,0 +1,13 @@
+#about-us {
+  background-color: rgba(255, 205, 5, 0.514);
+  min-height: max-content;
+  display: grid;
+  grid-template-rows: repeat(5, max-content);
+  gap: 1em;
+  .closure {
+    font-weight: var(--fw-bold);
+    span {
+      color: var(--accent-100);
+    }
+  }
+}

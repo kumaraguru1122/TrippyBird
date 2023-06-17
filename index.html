@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>TrippyBird</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a id="logo" href="#home">
+          <img src="" alt="" />
+          TrippyBird
+        </a>
+      </div>
+      <a id="h-menu" href="javascript:void(0);" onclick="menu()">menu</a>
+      <nav id="nav-links">
+        <ul id="pri-nav">
+          <li class="nav-items"><a href="#travel-package">Packages</a></li>
+          <li class="nav-items"><a href="#accordian">FAQs</a></li>
+          <li class="nav-items"><a href="#about-us">About Us</a></li>
+          <li class="nav-items"><a href="#contact-us">Contact Us</a></li>
+        </ul>
+        <button id="login">Login</button>
+      </nav>
+    </header>
+    <main class="hero" id="home">
+      <div class="hero-text">
+        <h1>
+          <span>Explore</span>
+          the world
+        </h1>
+        <p id="lead">It's time to travel</p>
+        <p id="h-p">
+          Welcome to
+          <span>TrippyBird</span>
+          where you can explore the world and plan your next adventure. Whether
+          you're looking for a relaxing beach vacation, an exciting city break,
+          or a thrilling outdoor experience, we've got you covered.
+        </p>
+      </div>
+      <div class="destination-form">
+        <div class="glass">
+          <form action="">
+            <p>Where do you want to go?</p>
+            <label for="">Destination:</label>
+            <input
+              type="text"
+              id="search-bar"
+              placeholder="Search your destination.."
+            />
+            <label for="">Date:</label>
+            <input type="date" name="" id="" />
+          </form>
+          <button>check travel package</button>
+        </div>
+        <a href="#travel-package">or check our recommendation here</a>
+      </div>
+    </main>
+    <section class="section" id="package-theme">
+      <h2 class="section-title">Make memories with us</h2>
+      <p>
+        We believe that every journey is an opportunity to create lasting
+        memories. Let us guide you to destinations and experiences that will
+        create the most beautiful memories of lifetime.
+      </p>
+      <h3>Choose your type of vacation</h3>
+      <div class="themes">
+        <div class="wrapper">
+          <div class="theme theme-1"><p>Adventure Travel</p></div>
+        </div>
+        <div class="wrapper">
+          <div class="theme theme-2"><p>Beach Gateway</p></div>
+        </div>
+        <div class="wrapper">
+          <div class="theme theme-3">
+            <p>Historical and Cultural Immersion</p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="theme theme-4"><p>Family-friendly Vacation</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="travel-package">
+      <h2 class="section-title">Popular Packages</h2>
+      <div class="package-slide">
+        <ul class="packages">
+          <li class="package">
+            <div class="text-container">
+              <h3 class="package-name">Wildlife Safari in Kenya</h3>
+            </div>
+          </li>
+          <li class="package">
+            <div class="text-container">
+              <h3 class="package-name">Cultural Exploration in India</h3>
+            </div>
+          </li>
+          <li class="package">
+            <div class="text-container">
+              <h3 class="package-name">Adventure in New Zealand</h3>
+            </div>
+          </li>
+        </ul>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="nav-dot">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+
+      <p>You can customize your own package</p>
+      <button>See More Packages</button>
+    </section>
+    <section class="section" id="testimonials">
+      <h2 class="section-title">See what our customers say</h2>
+      <ul>
+        <li>
+          <div class="profile">
+            <img src="/assets/images/images/profile-1.jpeg" alt="" />
+            <p class="testimonial-name">Samantha</p>
+            <p class="verfied">Verified customer</p>
+          </div>
+          <blockquote>
+            "I've been using Travel X for years, and it never disappoints. The
+            team behind this website truly understands what travelers need. The
+            travel news and updates section has been a lifesaver, especially
+            during these uncertain times. I appreciate the attention to detail
+            in the destination guides, and the travel resources have saved me
+            time and effort. Travel X has become my trusted travel companion!"
+          </blockquote>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="/assets/images/images/profile-2.jpeg" alt="" />
+            <p class="testimonial-name">Ram</p>
+            <p class="verfied">Verified customer</p>
+          </div>
+          <blockquote>
+            "I stumbled upon TrippyBird while planning my first solo trip, and
+            it was a game-changer! The destination guides were incredibly
+            detailed and helped me uncover hidden gems in each city I visited.
+            The travel tips were invaluable, and the community forum allowed me
+            to connect with other solo travelers who shared their experiences
+            and advice. Thanks to TrippyBird, my trip was a resounding success!"
+          </blockquote>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="/assets/images/images/profile-3.jpeg" alt="" />
+            <p class="testimonial-name">Trisha</p>
+            <p class="verfied">Verified customer</p>
+          </div>
+          <blockquote>
+            "Travel X is my go-to resource whenever I plan a vacation. The
+            website is user-friendly, and the information provided is
+            comprehensive and up to date. From booking my flights and
+            accommodation to exploring local attractions and finding the best
+            restaurants, Travel X has it all. The inspirational stories always
+            leave me daydreaming about my next adventure. Highly recommended!"
+          </blockquote>
+        </li>
+      </ul>
+    </section>
+    <section class="section" id="accordian">
+      <h2 class="section-title">FAQs:</h2>
+      <ul>
+        <li>
+          <p class="question">Do I need a visa to travel to [destination]?</p>
+          <p class="answer">
+            "Visa requirements vary depending on your nationality and the
+            destination. Please check with the respective embassy or consulate
+            of the country you plan to visit for the most up-to-date
+            information."
+          </p>
+        </li>
+        <li>
+          <p class="question">
+            What documents do I need for international travel?
+          </p>
+          <p class="answer">
+            For international travel, you typically need a valid passport with
+            at least six months of validity remaining. Some countries may also
+            require a visa. Check the entry requirements of your destination
+            well in advance and ensure you have the necessary documents."
+          </p>
+        </li>
+        <li>
+          <p class="question">How can I find affordable accommodation?</p>
+          <p class="answer">
+            "To find affordable accommodation, consider options such as
+            guesthouses, hostels, or budget hotels. Look for deals and discounts
+            on travel websites, and consider booking in advance. Another option
+            is to explore homestays or vacation rentals, which can provide a
+            unique and cost-effective experience."
+          </p>
+        </li>
+        <li>
+          <p class="question">Is it safe to travel solo?</p>
+          <p class="answer">
+            "Traveling solo can be a rewarding experience, but it's important to
+            take precautions. Research your destination, stay aware of your
+            surroundings, and follow common-sense safety practices. Inform
+            someone of your itinerary, trust your instincts, and stay connected
+            with friends and family."
+          </p>
+        </li>
+        <li>
+          <p class="question">
+            How far in advance should I book my flights and accommodations?
+          </p>
+          <p class="answer">
+            "Booking in advance is generally recommended, especially during peak
+            travel seasons or for popular destinations. Airlines and hotels
+            often offer early bird discounts. However, flexibility with travel
+            dates can sometimes lead to better deals, so compare prices and
+            consider the trade-offs."
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="section" id="about-us">
+      <h2 class="section-title">About Us</h2>
+      <p>
+        Welcome to TrippyBird, your ultimate resource for travel inspiration,
+        planning, and unforgettable experiences. We are passionate about
+        exploring the world and believe that travel has the power to broaden
+        horizons, create lifelong memories, and connect people from different
+        cultures.
+      </p>
+      <p>
+        Our website features destination guides, travel tips, itineraries, food
+        and culture insights, and much more. We strive to provide comprehensive
+        and practical information that empowers you to plan your trips with
+        confidence and ease.
+      </p>
+      <p>
+        Whether you're a seasoned globetrotter or embarking on your first
+        adventure, TrippyBird is here to be your trusted companion. Join us in
+        exploring the world, discovering hidden gems, and embracing the wonders
+        of travel.
+      </p>
+      <!--  -->
+      <p class="closure">
+        Happy journeying!
+        <br />
+        <span>The TrippyBird Team</span>
+      </p>
+    </section>
+    <footer class="section" id="contact-us">
+      <div class="contact-form">
+        <h2>Just say Hello!</h2>
+        <form action="">
+          <div class="f-name">
+            <label for="f-name">First Name</label>
+            <input
+              type="text"
+              id="f-name"
+              name="firstname"
+              placeholder="Your first name.."
+            />
+          </div>
+
+          <div class="l-name">
+            <label for="l-name">Last Name</label>
+            <input
+              type="text"
+              id="l-name"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+          </div>
+
+          <div class="mail">
+            <label for="mail">Mail</label>
+            <input
+              type="text"
+              id="mail"
+              name="e-mail"
+              placeholder="Your email.."
+            />
+          </div>
+
+          <div class="phone">
+            <label for="phone">Phone no</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone-no"
+              placeholder="Your phone number.."
+            />
+          </div>
+
+          <div class="message">
+            <label for="message">Message</label>
+            <input
+              type="text"
+              id="message"
+              name="message-content"
+              placeholder="Message.."
+            />
+          </div>
+
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+      <div class="contact-info">
+        <p class="call">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+            />
+          </svg>
+          +91 9876543210
+        </p>
+        <p class="mail">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
+            />
+          </svg>
+          trippybird33@gmail.com
+        </p>
+        <p class="location">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+            />
+          </svg>
+
+          461 North Street, Kumbakonam 612001, Thanjavur Dt.
+        </p>
+        <p class="timing">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+            />
+          </svg>
+
+          We are open from monday to friday
+          <br />
+          10:00 AM to 6:00 PM
+        </p>
+        <div class="social-links">
+          <p>Folow on:</p>
+          <div class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+              />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+              />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
